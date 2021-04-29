@@ -1,0 +1,148 @@
+/* arimo-regular - latin */
+@font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/arimo-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/arimo-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/arimo-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/arimo-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/arimo-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/arimo-v17-latin-regular.svg#Arimo') format('svg'); /* Legacy iOS */
+  }
+  /* arimo-500 - latin */
+  @font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/arimo-v17-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/arimo-v17-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/arimo-v17-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/arimo-v17-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/arimo-v17-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/arimo-v17-latin-500.svg#Arimo') format('svg'); /* Legacy iOS */
+  }
+  /* arimo-600 - latin */
+  @font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/arimo-v17-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/arimo-v17-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/arimo-v17-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/arimo-v17-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/arimo-v17-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/arimo-v17-latin-600.svg#Arimo') format('svg'); /* Legacy iOS */
+  }
+  /* arimo-700 - latin */
+  @font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/arimo-v17-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/arimo-v17-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/arimo-v17-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/arimo-v17-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/arimo-v17-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/arimo-v17-latin-700.svg#Arimo') format('svg'); /* Legacy iOS */
+  }
+
+.app {
+    text-align: left;
+    font-family: 'Arimo';
+}
+
+//top navigation
+.nav-header {
+    display: flex;
+    padding: 16px;
+    img {
+        width: 28px;
+        margin-right: 16px;
+    }
+    .loc {
+        display: flex;
+        flex-direction: column; 
+        label {
+            font-size: 8px;
+            color: #e2e4e4;
+            margin: 0;
+        }
+        .loc-title {
+            color: #6e7679;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            img {
+                width: 20px;
+                margin-top: 2px;
+            }
+        }
+    }    
+}
+
+//swipe date
+
+.swipe-date-wrapper {
+    border-bottom: solid 1px#f1f1f2;
+
+}
+.swipe-date-container {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: 0 16px 16px 16px;
+}
+
+.date-item {
+    margin-right: 32px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: capitalize;        
+    color: #424749;
+    position: relative;
+    label {
+        font-size: 8px;
+        margin: 0;
+        padding: 0;
+    }
+    h5 {
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    &.active {
+        color: #ffffff;        
+    }
+    &.disable {
+        color: #e2e4e4
+    }
+    .active {
+        background-color: #424749;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        z-index: -1;
+        margin-left: -12px;
+        margin-top: -1px;
+    }
+}
+
+//top button
+
+.top-btn-container {
+    padding: 8px 16px;
+    box-shadow: 0px 8px 10px 0px rgba(10,31,68,0.09);
+    -webkit-box-shadow: 0px 8px 10px 0px rgba(10,31,68,0.09);
+    -moz-box-shadow: 0px 8px 10px 0px rgba(10,31,68,0.09);
+    .top-btn-wrapper {
+        display: flex;
+    }
+}
